@@ -1,0 +1,2 @@
+rootProject.name = "Carbon Movies"
+include ':app'
