@@ -14,11 +14,11 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        def apikeyProperties = new Properties()
-        apikeyProperties.load(new FileInputStream(rootProject.file("apikey.properties")))
+        def localProperties = new Properties()
+        localProperties.load(new FileInputStream(rootProject.file("local.properties")))
 
         // should correspond to key/value pairs inside the file
-        buildConfigField("String", "THE_MOVIE_DB_API_TOKEN",apikeyProperties['MyTheMoviesDBApiToken'])
+        buildConfigField("String", "THE_MOVIE_DB_API_TOKEN",localProperties['MyTheMoviesDBApiToken'])
     }
 
     buildTypes {
