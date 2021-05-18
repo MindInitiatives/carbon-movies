@@ -2,10 +2,6 @@ plugins {
     id 'com.android.application'
 }
 
-def apikeyProperties = new Properties()
-apikeyProperties.load(new FileInputStream(rootProject.file("apikey.properties")))
-
-
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -17,6 +13,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        def apikeyProperties = new Properties()
+        apikeyProperties.load(new FileInputStream(rootProject.file("apikey.properties")))
+
         // should correspond to key/value pairs inside the file
         buildConfigField("String", "THE_MOVIE_DB_API_TOKEN",apikeyProperties['MyTheMoviesDBApiToken'])
     }
@@ -61,3 +61,4 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
+
