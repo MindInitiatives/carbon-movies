@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MoviesAdapter(this, movieList);
 
         //responsiveness
-        if (getActivity().getResources.getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
+        if (getActivity().getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT) {
             recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
         }
         else {
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull @NotNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_settings;
+            case R.id.menu_settings:
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

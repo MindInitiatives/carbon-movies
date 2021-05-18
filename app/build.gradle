@@ -2,6 +2,10 @@ plugins {
     id 'com.android.application'
 }
 
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -12,8 +16,9 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // should correspond to key/value pairs inside the file
+        buildConfigField("String", "THE_MOVIE_DB_API_TOKEN",localProperties['MyTheMoviesDBApiToken'])
     }
 
     buildTypes {
@@ -23,9 +28,9 @@ android {
 //            buildConfigField 'String', 'THE_MOVIE_DB_API_TOKEN', MyTheMoviesDBApiToken
         }
     }
-    buildTypes.each {
-        it.buildConfigField 'String', 'THE_MOVIE_DB_API_TOKEN', MyTheMoviesDBApiToken
-    }
+//    buildTypes.each {
+//        it.buildConfigField 'String', 'THE_MOVIE_DB_API_TOKEN', MyTheMoviesDBApiToken
+//    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
