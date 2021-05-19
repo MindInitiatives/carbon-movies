@@ -114,11 +114,12 @@ public class MainActivity extends AppCompatActivity {
 
             ApiClient client = new ApiClient();
             Service apiService =
-                    ApiClient.getClient().create(Service.class);
+                    client.getClient().create(Service.class);
             Call<MoviesResponse> call = apiService.getPopularMovies(BuildConfig.THE_MOVIE_DB_API_TOKEN);
             call.enqueue(new Callback<MoviesResponse>() {
                 @Override
                 public void onResponse(Call<MoviesResponse> call, Response<MoviesResponse> response) {
+                    Log.i("api response", response.toString());
                     List<Movie> movies = response.body().getResults();
                     recyclerView.setAdapter(new MoviesAdapter(getApplicationContext(), movies));
                     recyclerView.smoothScrollToPosition(0);
