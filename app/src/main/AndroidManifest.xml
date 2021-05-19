@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.carbonmovies">
+    package="com.mindinitiatives.carbonmovies">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,7 +14,7 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/Theme.CarbonMovies">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.mindinitiatives.carbonmovies.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,13 +22,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DetailActivity"
+            android:name="com.mindinitiatives.carbonmovies.DetailActivity"
             android:label="Movies"
             android:theme="@style/Theme.CarbonMovies.NoActionBar"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.mindinitiatives.carbonmovies.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value="com.mindinitiatives.carbonmovies.MainActivity" />
         </activity>
     </application>
 

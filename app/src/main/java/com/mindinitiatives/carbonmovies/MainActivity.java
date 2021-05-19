@@ -1,4 +1,4 @@
-package com.example.carbonmovies;
+package com.mindinitiatives.carbonmovies;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,11 +19,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import com.example.carbonmovies.adapter.MoviesAdapter;
-import com.example.carbonmovies.api.Service;
-import com.example.carbonmovies.common.common;
-import com.example.carbonmovies.model.Movie;
-import com.example.carbonmovies.model.MoviesResponse;
+import com.mindinitiatives.carbonmovies.adapter.MoviesAdapter;
+import com.mindinitiatives.carbonmovies.api.Service;
+import com.mindinitiatives.carbonmovies.common.common;
+import com.mindinitiatives.carbonmovies.model.Movie;
+import com.mindinitiatives.carbonmovies.model.MoviesResponse;
 
 import org.jetbrains.annotations.NotNull;
 

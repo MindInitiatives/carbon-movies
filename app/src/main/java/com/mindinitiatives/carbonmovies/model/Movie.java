@@ -1,4 +1,4 @@
-package com.example.carbonmovies.model;
+package com.mindinitiatives.carbonmovies.model;
 
 import com.google.gson.annotations.SerializedName;
 

@@ -1,4 +1,4 @@
-package com.example.carbonmovies;
+package com.mindinitiatives.carbonmovies;
 
 import android.content.Context;
 

@@ -1,6 +1,6 @@
-package com.example.carbonmovies.api;
+package com.mindinitiatives.carbonmovies.api;
 
-import com.example.carbonmovies.model.MoviesResponse;
+import com.mindinitiatives.carbonmovies.model.MoviesResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

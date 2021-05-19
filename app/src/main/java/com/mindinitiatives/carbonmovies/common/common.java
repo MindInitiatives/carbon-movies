@@ -1,4 +1,4 @@
-package com.example.carbonmovies.common;
+package com.mindinitiatives.carbonmovies.common;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

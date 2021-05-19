@@ -1,4 +1,4 @@
-package com.example.carbonmovies.adapter;
+package com.mindinitiatives.carbonmovies.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,9 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.carbonmovies.DetailActivity;
-import com.example.carbonmovies.R;
-import com.example.carbonmovies.model.Movie;
+import com.mindinitiatives.carbonmovies.DetailActivity;
+import com.mindinitiatives.carbonmovies.R;
+import com.mindinitiatives.carbonmovies.model.Movie;
 
 import org.jetbrains.annotations.NotNull;
 

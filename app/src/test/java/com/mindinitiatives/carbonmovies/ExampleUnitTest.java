@@ -1,4 +1,4 @@
-package com.example.carbonmovies;
+package com.mindinitiatives.carbonmovies;
 
 import org.junit.Test;
 
