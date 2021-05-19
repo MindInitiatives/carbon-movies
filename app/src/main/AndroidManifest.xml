@@ -30,6 +30,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mindinitiatives.carbonmovies.MainActivity" />
         </activity>
+        <activity
+            android:name="com.mindinitiatives.carbonmovies.SettingsActivity"
+            android:label="Settings"/>
     </application>
 
 </manifest>

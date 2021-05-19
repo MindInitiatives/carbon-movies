@@ -16,91 +16,81 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/movieTitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/layout_margin_left"
-                android:text="@string/name_movie"
-                android:textAlignment="center"
-                android:layout_marginTop="10dp"
-                android:gravity="center_horizontal"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
+            android:orientation="vertical"
+            android:padding="@dimen/padding_layout"
+            android:layout_marginTop="@dimen/layout_margin_top">
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/layout_margin_left"
-                android:padding="@dimen/padding_layout"
-                android:layout_marginTop="@dimen/layout_margin_top"
-                android:textSize="20sp"/>
+                android:textStyle="bold"
+                android:text="@string/name_movie"
+                android:textSize="22sp"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/layout_margin_top2">
+
+                <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rating"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/userRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_layout"
+                    android:text="@string/rating"
+                    android:textSize="18sp"/>
+
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/plot"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/layout_margin_left"
                 android:text="@string/plot"
-                android:textAlignment="center"
-                android:layout_marginTop="@dimen/layout_margin_top2"
-                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"
                 android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="20sp"/>
 
             <TextView
                 android:id="@+id/plotSynopsis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/layout_margin_left"
-                android:padding="@dimen/padding_layout"
                 android:layout_marginTop="@dimen/layout_margin_top"
-                android:textSize="20sp"/>
+                android:textSize="16sp"/>
 
-            <TextView
-                android:id="@+id/rating"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/layout_margin_left"
-                android:text="@string/rating"
-                android:textAlignment="center"
-                android:layout_marginTop="@dimen/layout_margin_top2"
-                android:gravity="center_horizontal"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
-
-            <TextView
-                android:id="@+id/userRating"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/layout_margin_left"
-                android:padding="@dimen/padding_layout"
-                android:layout_marginTop="@dimen/layout_margin_top"
-                android:textSize="20sp"/>
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/layout_margin_top2">
 
             <TextView
                 android:id="@+id/release"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/layout_margin_left"
                 android:text="@string/release"
-                android:textAlignment="center"
-                android:layout_marginTop="@dimen/layout_margin_top2"
-                android:gravity="center_horizontal"
                 android:textStyle="bold"
-                android:textSize="25sp"/>
+                android:textSize="18sp"/>
 
             <TextView
                 android:id="@+id/releaseDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/layout_margin_left"
-                android:padding="@dimen/padding_layout"
-                android:layout_marginTop="@dimen/layout_margin_top"
-                android:textSize="20sp"/>
+                android:textSize="18sp"/>
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
