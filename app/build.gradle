@@ -19,6 +19,7 @@ android {
 
         // should correspond to key/value pairs inside the file
         buildConfigField("String", "THE_MOVIE_DB_API_TOKEN",localProperties['MyTheMoviesDBApiToken'])
+        buildConfigField("String", "THE_MOVIE_DB_API_KEY",localProperties['MyTheMoviesDBApiKey'])
     }
 
     buildTypes {
