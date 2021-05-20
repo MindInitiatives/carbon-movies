@@ -4,7 +4,7 @@
 > Carbon Movies is a Completed Technical take home challenge from Carbon Finance
 ## Technologies
 
-- [Java](https://java.com) - A general-purpose programming language that is class-based, object-oriented and designed to have as few implementation dependencies as possible.
+- [Kotlin](https://kotlinlang.org) - Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference.
 - [Android](https://android.com) - Android is a mobile operating system developed by Google. It is based on a modified version of the Linux kernel and other open source software.
 
 ## Tools
