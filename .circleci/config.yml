@@ -22,9 +22,8 @@ jobs:
       TERM: dumb
 
     steps:
-      - checkout:
-          post:
-            - cp local.properties.ci local.properties
+      - checkout
+
       # Download and cache dependencies
       - restore_cache:
           keys:
